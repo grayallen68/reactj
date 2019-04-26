@@ -2,8 +2,10 @@
   "name": "reactj",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://grayallen68.github.io/reactj/",
   "dependencies": {
     "@tensorflow/tfjs": "^0.13.3",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-responsive-carousel": "^3.1.49",
@@ -15,6 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
