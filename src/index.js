@@ -13,7 +13,7 @@ const routing = (
     <Router>
         <div>
             <Route exact path={process.env.PUBLIC_URL + "/"} component={App} />
-            <Route exact path={process.env.PUBLIC_URL + "/info"} component={Info} />
+            <Route exact path={"/info"} component={Info} />
             <Route exact path={process.env.PUBLIC_URL + '/about'} component={About} />
             <Route path={process.env.PUBLIC_URL + '/info/:birdname'} component={birdPage}/>
         </div>
