@@ -1,0 +1,16 @@
+.nameListItem{
+    background-color: white;
+    color: #656FC4;
+    padding: 4px;
+    margin: 1px;
+    border: 2px solid #656FC4;
+    width: 150px;
+    border-radius: 3px;
+}
+.nameListItem:hover{
+    background-color: rgb(160, 164, 197);
+}
+.nameList{
+    list-style-type: none;
+    margin: 10px;
+}
