@@ -10,12 +10,12 @@ import About from './About';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
         <div>
-            <Route exact path="/" component={App} />
-            <Route exact path="/info" component={Info} />
-            <Route exact path='/about' component={About} />
-            <Route path={'/info/:birdname'} component={birdPage}/>
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={App} />
+            <Route exact path={process.env.PUBLIC_URL + "/info"} component={Info} />
+            <Route exact path={process.env.PUBLIC_URL + '/about'} component={About} />
+            <Route path={process.env.PUBLIC_URL + '/info/:birdname'} component={birdPage}/>
         </div>
     </Router>
 );
